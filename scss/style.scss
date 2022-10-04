@@ -37,12 +37,13 @@ $s-width: 479.98px;
 }
 
 .main{
-flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 body{
     font-family: Gilroy;
     font-size: 20px;
+    overflow: visible;
     &.locked {
         overflow: hidden;
     }
@@ -107,6 +108,7 @@ body{
             align-items: center;
             z-index: 22;
             animation: fade 0.1s linear;
+            gap: 40px;
             }
         }
     }
@@ -119,12 +121,13 @@ body{
         }
         @media (max-width: $sm-width) {
             color: #FAFAFA;
+            font-size: 30px;
         }
     }
     &__burger{
         display: none;
         @media (max-width: $sm-width) {
-            z-index: 1000;
+            z-index: 23;
             display: block;
             position: relative;
             width: 30px;
