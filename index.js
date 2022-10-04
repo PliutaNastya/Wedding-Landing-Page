@@ -4,8 +4,8 @@ const body = document.querySelector('body')
 
 document.addEventListener('DOMContentLoaded', () => {
     burger.addEventListener('click', () => {
-        menu.classList.add('active')
-        burger.classList.add('active-burger')
+        menu.classList.toggle('active')
+        burger.classList.toggle('active-burger')
         body.classList.add('locked')
     })
 });
